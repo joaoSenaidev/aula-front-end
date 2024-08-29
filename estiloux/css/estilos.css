@@ -1,40 +1,46 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 
 }
-body{
+
+body {
     background-color: #f8f8f8;
 }
 
-header{
+header {
     background-color: #727272;
 }
-h1{ 
-    font-family:verdana,Geneva,Tahoma,sans-serif;
+
+h1 {
+    font-family: verdana, Geneva, Tahoma, sans-serif;
     font-size: 30px;
     font-weight: 300px;
     color: black;
 }
-.layout-grid{
+
+.layout-grid {
     width: 100%;
     max-width: 992px;
     margin: 0 auto;
-    border: 1px solid salmon;
 }
-.lousa{ 
+
+.header-flex {
     display: flex;
     justify-content: space-around;
+    align-items: center;
 }
-nav{
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     width: 400px;
     height: 100%;
-    border: 3px solid white;
+
 }
-.rodape{ 
+
+.rodape {
     background-color: #727272;
 }
-
-
-
