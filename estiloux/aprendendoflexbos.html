@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layouts flexíveis com flexbox</title>
+
+    <style>
+        section {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between; /*alinhamento da direcao*/
+            align-items: flex-start; /*ao contrario da direcao*/
+
+
+            width: 600px;
+            height: 500px;
+            margin-left: auto;
+            margin-right: auto;
+            border: 3px dotted black;
+        }
+
+        article {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+
+            width: 100px;
+            height: 100px;
+            margin-bottom: 10px;
+            background-color: rgb(95, 240, 95);
+            border: 5px;
+            border-radius: 5px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <section>
+        <!---itens do flex-->
+        <article>Item 1</article>
+        <article>Item 2</article>
+        <article>Item 3</article>
+        <article>Item 4</article>
+        <article>Item 5</article>
+        <article>Item 6</article>
+        <article>Item 7</article>
+        <article>Item 8</article>
+        <article>Item 9</article>
+        <article>Item 10</article>
+
+    </section>
+</body>
+
+</html>

@@ -1,0 +1,15 @@
+p{
+    font-family: "courier new", courier, monospace;
+    color: red; 
+}
+*{
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    padding: 20px;
+    color: white;
+    background-color: salmon;
+    border: 1px solid black;
+    border-radius: 5px;
+    overflow: auto;
+}
