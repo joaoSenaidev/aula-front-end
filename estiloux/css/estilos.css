@@ -5,31 +5,31 @@
 
 }
 
-body {
-    background-color: #f8f8f8;
+html,body {
+    height: 100%;
+    border: 2px solid red;
+
 }
 
-header {
+body {
+
+    background-color: #f8f8f8;
+    border: 2px solid blue;
+}
+
+/*****************header*******************************/
+
+header,footer {
+    width: 100%;
+    height: 10%,;
     background-color: #727272;
 }
 
 h1 {
-    font-family: verdana, Geneva, Tahoma, sans-serif;
-    font-size: 30px;
-    font-weight: 300px;
-    color: black;
-}
-
-.layout-grid {
-    width: 100%;
-    max-width: 992px;
-    margin: 0 auto;
-}
-
-.header-flex {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+    font-family: verdana, sans-serif;
+    font-size: 26px;
+    font-weight: 100;
+    color: white;
 }
 
 nav {
@@ -38,9 +38,104 @@ nav {
     align-items: center;
     width: 400px;
     height: 100%;
+    /*border: 3px solid white;*/
 
 }
 
-.rodape {
+nav a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100px;
+    height: 80px;
+    color: #e8e8e8;
+    text-decoration: none;
+    font-family: verdana, sans-serif;
+    transition: background-color ease 1s, margin-left ease-in-out 2s,
+        margin-bottom ease-out 2s;
+
+}
+
+
+footer {
+    width: 100%;
+    height: 50px;
     background-color: #727272;
+}
+
+nav a:hover {
+    color: purple;
+    text-decoration: underline;
+    font-style: oblique;
+    background-color: rgba(232, 232, 232, 0.5);
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+
+.layout-grid {
+    width: 100%;
+    height: 100%;
+    max-width: 992px;
+    margin: 0 auto;
+}
+
+
+
+.header-flex {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.rodape {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+
+    background-color: #727272;
+
+}
+
+.ux {
+    font-size: 30px;
+    margin-left: 3px;
+    font-style: italic;
+    font-weight: 600;
+    font-family: monospace;
+}
+
+/*********************************** main **********************************************************************/
+main {
+    width: 100%;
+    height: 800px;
+    border: 3px solid red;
+}
+
+.main-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+    height: 100%;
+    background-color: powderblue;
+    border: 2px solid green;
+}
+
+.harmonia {
+
+    width: 670px;
+    height: 500px;
+    background-color: rgb(8, 243, 102);
+    border: 2px solid blue;
+}
+
+aside {
+
+    width: 250px;
+    height: 500px;
+    background-color: rgb(8, 243, 102);
+    border: 2px solid purple;
 }
