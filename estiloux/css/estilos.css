@@ -1,101 +1,50 @@
+/* reset de propriedades do css */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
 }
 
-html,body {
+html,
+body {
     height: 100%;
-    border: 2px solid red;
-
+    /* border: 2px solid red;*/
 }
 
 body {
-
-    background-color: #f8f8f8;
-    border: 2px solid blue;
+    background-color: #EFEFEF;
+    /*border: 2px solid blue;*/
 }
 
-/*****************header*******************************/
-
-header,footer {
-    width: 100%;
-    height: 10%,;
-    background-color: #727272;
-}
-
-h1 {
-    font-family: verdana, sans-serif;
-    font-size: 26px;
-    font-weight: 100;
-    color: white;
-}
-
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 400px;
-    height: 100%;
-    /*border: 3px solid white;*/
-
-}
-
-nav a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    width: 100px;
-    height: 80px;
-    color: #e8e8e8;
-    text-decoration: none;
-    font-family: verdana, sans-serif;
-    transition: background-color ease 1s, margin-left ease-in-out 2s,
-        margin-bottom ease-out 2s;
-
-}
-
-
+/******************** HEADER *********************/
+header,
 footer {
     width: 100%;
-    height: 50px;
+    height: 10%;
     background-color: #727272;
 }
 
-nav a:hover {
-    color: purple;
-    text-decoration: underline;
-    font-style: oblique;
-    background-color: rgba(232, 232, 232, 0.5);
-    margin-left: 10px;
-    margin-bottom: 10px;
-}
-
-
+/* caixa para centralizar o conteúdo */
 .layout-grid {
     width: 100%;
     height: 100%;
     max-width: 992px;
     margin: 0 auto;
+    /* border: 3px solid salmon; */
 }
-
-
 
 .header-flex {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 }
 
-.rodape {
-    display: flex;
-    justify-content: start;
-    align-items: center;
-
-    background-color: #727272;
-
+h1 {
+    font-family: Verdana, sans-serif;
+    font-size: 26px;
+    font-weight: 100;
+    color: white;
+    /* border: 3px solid white; */
 }
 
 .ux {
@@ -106,36 +55,151 @@ nav a:hover {
     font-family: monospace;
 }
 
-/*********************************** main **********************************************************************/
-main {
-    width: 100%;
-    height: 800px;
-    border: 3px solid red;
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 400px;
+    height: 100%;
+    /* border: 3px solid white; */
 }
 
+nav a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid red; */
+    width: 100px;
+    height: 80px;
+    color: #E8E8E8;
+    text-decoration: none;
+    font-family: Verdana, sans-serif;
+    transition: background-color 0.4s, ease-out 0.6s;
+}
+
+nav a:hover {
+    /* margin-left: 10px;
+    margin-bottom: 10px; */
+    background-color: rgba(232, 232, 232, 0.5);
+}
+
+
+/******************** Main *********************/
+main {
+    width: 100%;
+    height: 80%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    /* border: 3px solid red;*/
+    background-color: rgb(221, 220, 220);
+}
+
+/* div com a class main-flex 
+    flex container
+*/
 .main-flex {
+    width: 100%;
+    height: 100%;
+
     display: flex;
     justify-content: space-between;
     align-items: center;
 
-    width: 100%;
-    height: 100%;
-    background-color: powderblue;
-    border: 2px solid green;
+    background-color: rgb(221, 220, 220);
+    /*border: 2px solid green;*/
 }
 
 .harmonia {
-
-    width: 670px;
-    height: 500px;
-    background-color: rgb(8, 243, 102);
-    border: 2px solid blue;
+    /* margin: 10px; */
+    width: 700px;
+    height: 100%;
+    /*border: 2px solid blue;*/
+    background-color: #f8f8f8;
+    overflow: auto;
 }
+
+
+.img-lapis {
+    width: 100%;
+}
+
+.harmonia h4 {
+    font-family:  Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    margin-top: 25px;
+    margin-right: 20px;
+    margin-left: 20px;
+    
+    color: #A8A8A8;
+}
+
+.harmonia p {
+    font-family:  Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    margin-top: 25px;
+    margin-right: 20px;
+    margin-left: 20px;
+    
+    color:#A8A8A8;
+}
+
+
+
 
 aside {
-
+    /* margin: 10px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     width: 250px;
-    height: 500px;
-    background-color: rgb(8, 243, 102);
-    border: 2px solid purple;
+    height: 100%;
+    
+
+    background-color: #efefef;
+    /*border: 2px solid purple;*/
 }
+
+aside article{
+    background-color: #f8f8f8;
+}
+
+aside .buscar-box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+
+aside article h3{
+    width: 100%;
+    color: #A8A8A8;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 10px;
+    border: 2px solid #A8A8A8;
+}
+
+aside article input,
+aside article button{
+    height: 25px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+aside article input{
+    border: 1px solid #A8A8A8;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+aside button{
+    width: 30px;
+    background-color: #727272 ;
+    color: white;
+    border: none;
+    border: 1px solid #727272;
+    cursor: pointer;
+}
+
